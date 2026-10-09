@@ -1,0 +1,112 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.product-card {
+  background: white;
+  max-width: 430px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #00000018;
+}
+
+.product-card h2 {
+  color: #232f3e;
+}
+
+.product-card label {
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.product-card select,
+.product-card input {
+  padding: 9px;
+  margin: 6px;
+  max-width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 14px;
+  background: #ffb81c;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f3a847;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.toggle-button {
+  background: #146eb4;
+  color: white;
+}
+
+.toggle-button:hover {
+  background: #0d548c;
+}
+
+.empty {
+  color: #b42318;
+}
+
+.success {
+  color: #16803c;
+  font-weight: bold;
+}
+
+.footer {
+  background: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
